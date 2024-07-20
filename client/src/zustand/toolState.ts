@@ -48,25 +48,3 @@ const useToolState = create<ToolState>()(
 );
 
 export default useToolState;
-
-// import create from 'zustand';
-
-// interface ToolState {
-//   tool: null | any;
-
-//   setTool: (tool: any) => void;
-//   setFillColor: (color: string) => void;
-//   setStrokeColor: (color: string) => void;
-//   setLineWidth: (width: number) => void;
-// }
-
-// const useToolState = create<ToolState>((set) => ({
-//   tool: null,
-
-//   setTool: (tool) => set({ tool }),
-//   setFillColor: (color) => set((state) => ({ tool: { ...state.tool, fillColor: color } })),
-//   setStrokeColor: (color) => set((state) => ({ tool: { ...state.tool, strokeColor: color } })),
-//   setLineWidth: (width) => set((state) => ({ tool: { ...state.tool, lineWidth: width } })),
-// }));
-
-// export default useToolState;
